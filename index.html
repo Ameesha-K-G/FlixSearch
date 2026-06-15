@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlixSearch | Movie Search & Index</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <i class="fa-solid fa-clapperboard"></i>
+            <h1>Flix<span>Search</span></h1>
+        </div>
+        <div class="search-container">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            <input type="text" id="search-input" placeholder="Search for movies, series...">
+            <button id="search-btn">Search</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="genre-section">
+            <h3><i class="fa-solid fa-tags"></i> Browse by Genre</h3>
+            <div class="genre-container" id="genre-container">
+                <button class="genre-btn active" data-genre="all">All</button>
+                <button class="genre-btn" data-genre="action">Action</button>
+                <button class="genre-btn" data-genre="comedy">Comedy</button>
+                <button class="genre-btn" data-genre="drama">Drama</button>
+                <button class="genre-btn" data-genre="sci-fi">Sci-Fi</button>
+                <button class="genre-btn" data-genre="horror">Horror</button>
+                <button class="genre-btn" data-genre="romance">Romance</button>
+                <button class="genre-btn" data-genre="thriller">Thriller</button>
+            </div>
+        </section>
+
+        <section class="movies-section">
+            <h2 id="section-title"><i class="fa-solid fa-fire"></i> Trending Movies</h2>
+            <div class="movies-grid" id="movies-grid">
+                <div class="loader" id="loader"></div>
+            </div>
+        </section>
+    </main>
+    <div id="movie-modal" class="modal">
+        <div class="modal-content">
+            <button class="close-modal"><i class="fa-solid fa-xmark"></i></button>
+            <div id="modal-body">
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+
+        <p>&copy; 2026 flixsearch. Powered by OMDb API. Crafted with <i class="fa-solid fa-heart"
+                style="color: #e50914;"></i></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
