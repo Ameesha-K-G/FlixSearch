@@ -2,7 +2,7 @@
 
 CinePulse is a premium, modern, and highly responsive Movie Search & Index web application. It features a dark-themed UI (Netflix/Spotify style), crisp filled icons, a quick-access Genre Index filter bar, and an interactive deep-data modal popup powered by asynchronous JavaScript and the live OMDb API.
 
-![CinePulse Preview](https://images.unsplash.com/photo-1536440136628-849c177e76a1?q=80&w=1000&auto=format&fit=crop) *(Optional: Replace this link with a screenshot of your app)*
+
 
 ---
 
