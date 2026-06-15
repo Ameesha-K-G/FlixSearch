@@ -66,7 +66,7 @@ function displayMovies(movies, isDetailedMode) {
     moviesGrid.innerHTML = '';
     
     if (!movies || movies.length === 0) {
-        showError('No matching entries found.');
+        showError('Search for movies by title...');
         return;
     }
 
